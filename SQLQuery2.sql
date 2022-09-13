@@ -1,4 +1,4 @@
-SELECT [Client number], COUNT(TXN_sts), AVG(Miles_sum)
+SELECT [Client number], COUNT(TXN_sts) AS Cnt_type, AVG(Miles_sum) AS Cnt_miles
 FROM Member AS t1
 	INNER JOIN TXNs AS t2 ON t1.[Client id] = t2.[Client id]
 	INNER JOIN Products AS t3 ON t2.[Product id] = t3.[Product id]
