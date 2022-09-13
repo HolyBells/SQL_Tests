@@ -6,3 +6,4 @@ WHERE Txn_type IS NULL
 	AND YEAR(Txn_date) = '2021' 
 	AND Product_nm = 'Ticket' 
 	AND [Client mile balance_after txn] > 50000
+GROUP BY [Client number]
